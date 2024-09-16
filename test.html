@@ -1,0 +1,207 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Dropdown</title>
+    <style>
+ .custom-select {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Width of the selected item */
+}
+
+.select-selected {
+    width: 30px; /* Width of the selected item */
+    height: 30px; /* Height of the selected item to keep it circular */
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%; /* Make the selected item circular */
+}
+
+.select-selected img {
+    width: 100%;
+    height: 100%; /* Ensure image fills the container */
+    object-fit: cover; /* Maintain image aspect ratio and cover the container */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.select-items {
+    position: absolute;
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    display: none;
+    z-index: 99;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 150px; /* Limit the height of the dropdown */
+    overflow-y: auto; /* Add scrollbar if needed */
+    margin-top: 5px; /* Space between the selected item and dropdown list */
+}
+
+.select-items img {
+    width: 40px; /* Width of the dropdown items */
+    height: 40px; /* Height of the dropdown items to keep it circular */
+    cursor: pointer;
+    border-radius: 50%; /* Make the dropdown items circular */
+    object-fit: cover; /* Maintain image aspect ratio and cover the container */
+}
+
+.select-items img:hover {
+    opacity: 0.7; /* Add some hover effect if desired */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="custom-select">
+        <div class="select-selected">
+            <img src="img/uae.png" alt="Selected Flag">
+        </div>
+        <div class="select-items">
+            <img src="img/uae.png" alt="UAE Flag">
+            <img src="img/usa.png" alt="USA Flag">
+        </div>
+    </div>
+
+    <script>
+        const selectSelected = document.querySelector('.select-selected');
+        const selectItems = document.querySelector('.select-items');
+        const images = document.querySelectorAll('.select-items img');
+
+        selectSelected.addEventListener('click', () => {
+            selectItems.style.display = selectItems.style.display === 'block' ? 'none' : 'block';
+        });
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                selectSelected.innerHTML = `<img src="${img.src}" alt="Selected Flag">`;
+                selectItems.style.display = 'none';
+            });
+        });
+
+        // Close the dropdown if the user clicks outside of it
+        document.addEventListener('click', (event) => {
+            if (!selectSelected.contains(event.target)) {
+                selectItems.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Dropdown</title>
+    <style>
+        .custom-select {
+            position: relative;
+            display: inline-block;
+            width: 40px; /* Width of the selected item */
+        }
+        .select-selected {
+            width: 30px; /* Width of the selected item */
+            height: 30px; /* Height of the selected item to keep it circular */
+            cursor: pointer;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 50%; /* Make the selected item circular */
+            border: none; /* No border */
+            outline: none; /* No outline */
+        }
+        .select-selected img {
+            width: 100%;
+            height: 100%; /* Ensure image fills the container */
+            object-fit: cover; /* Maintain image aspect ratio and cover the container */
+            border-radius: 50%; /* Make the image circular */
+        }
+        .select-items {
+            position: absolute;
+            background-color: transparent; /* Transparent background */
+            border: none; /* No border */
+            display: none;
+            z-index: 99;
+            width: 100%;
+            box-sizing: border-box;
+            max-height: 150px; /* Limit the height of the dropdown */
+            overflow-y: auto; /* Add scrollbar if needed */
+            margin-top: 5px; /* Space between the selected item and dropdown list */
+        }
+        .select-items img {
+            width: 40px; /* Width of the dropdown items */
+            height: 40px; /* Height of the dropdown items to keep it circular */
+            cursor: pointer;
+            border-radius: 50%; /* Make the dropdown items circular */
+            object-fit: cover; /* Maintain image aspect ratio and cover the container */
+        }
+        .select-items img:hover {
+            opacity: 0.7; /* Add some hover effect if desired */
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-select">
+        <div class="select-selected">
+            <img src="img/uae.png" alt="Selected Flag">
+        </div>
+        <div class="select-items">
+            <img src="img/uae.png" alt="UAE Flag">
+            <img src="img/usa.png" alt="USA Flag">
+        </div>
+    </div>
+
+    <p class="card-text">Original Card Text</p>
+    <p class="symbol">Original Symbol</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectSelected = document.querySelector('.select-selected');
+            const selectItems = document.querySelector('.select-items');
+            const images = document.querySelectorAll('.select-items img');
+
+            // Original text values
+            const originalCardText = 'Original Card Text'; // Replace with the original text for .card-text
+            const originalSymbol = 'Original Symbol'; // Replace with the original text for .symbol
+
+            // Update elements based on selected flag
+            function updateContent(flag) {
+                if (flag === 'usa') {
+                    document.querySelector('.card-text').innerText = '18,000';
+                    document.querySelector('.symbol').innerText = 'USD';
+                } else if (flag === 'uae') {
+                    document.querySelector('.card-text').innerText = originalCardText;
+                    document.querySelector('.symbol').innerText = originalSymbol;
+                }
+            }
+
+            selectSelected.addEventListener('click', () => {
+                selectItems.style.display = selectItems.style.display === 'block' ? 'none' : 'block';
+            });
+
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    // Update the selected flag image
+                    selectSelected.innerHTML = `<img src="${img.src}" alt="Selected Flag">`;
+                    selectItems.style.display = 'none';
+
+                    // Update content based on the selected flag
+                    const selectedFlag = img.alt.toLowerCase().replace(' flag', '');
+                    updateContent(selectedFlag);
+                });
+            });
+
+            // Close the dropdown if the user clicks outside of it
+            document.addEventListener('click', (event) => {
+                if (!selectSelected.contains(event.target)) {
+                    selectItems.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

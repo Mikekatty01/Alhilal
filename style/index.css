@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @media screen and (max-width: 350px) { */
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+a {
+text-decoration: none;
+color: white !important;
+}
+body{
+    background-color: #0F0F45;
+}
+.login-page {
+    background-color: #000000;
+}
+.svg-1 {
+    margin-inline-start: 25px !important;
+    margin-block-start: 60px !important;
+    margin-block-end: 50px;
+}
+.head {
+    font-size: 59px;
+    font-weight: bold;
+    background: linear-gradient(1deg,#E37B7E  5%,  #6B185E 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    fill: transparent;
+    margin-inline-start: 24px;
+    margin-block-start: 211px;
+}
+.login {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-block-start: 40px;
+}
+form {
+    margin-inline-start: 45px;
+}
+form label{
+    
+    font-size: 13px;
+    height: 8px;
+    
+    color: #ffffff;
+    display: block;
+    margin-block-end: 20px;
+}
+form input {
+    height: 45px;
+    width: 300px;
+    margin-inline-start: -5px;
+    background-color: #1A1A1A;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color:#ffffff;
+    padding-left: 15px;
+    margin-block-end: 20px;
+}
+form input[type="password"] {
+    height: 45px;
+    width: 100%;
+    margin-inline-start: -5px;
+    background-color: #1A1A1A;
+    color:#ffffff;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+    margin-block-end: 20px;
+}
+
+@media screen and (max-width: 361px) {
+    * {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+    }
+    a {
+    text-decoration: none;
+    color: white !important;
+}
+    body{
+        background-color: #0F0F45;
+    }
+    .login-page {
+        background-color: #000000;
+    }
+    .svg-1 {
+        margin-inline-start: 25px !important;
+        margin-block-start: 60px !important;
+        margin-block-end: 50px;
+    }
+    .head {
+        font-size: 59px;
+        font-weight: bold;
+        background: linear-gradient(1deg,#E37B7E  5%,  #6B185E 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        fill: transparent;
+        margin-inline-start: 24px;
+        margin-block-start: 211px;
+    }
+    .login {
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        margin-block-start: 40px;
+    }
+    form {
+        margin-inline-start: 35px;
+    }
+
+    form label{
+        
+        font-size: 13px;
+        height: 8px;
+        color: #ffffff;
+        display: block;
+        margin-block-end: 20px;
+    }
+    form input {
+        height: 45px;
+        width: 250px;
+        margin-inline-start: -5px;
+        background-color: #1A1A1A;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        padding-left: 15px;
+        margin-block-end: 20px;
+    }
+
+}

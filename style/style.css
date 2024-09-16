@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @media screen and (max-width: 350px) { */
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+body {
+    background-color: #f7f4f4;
+}
+a {
+    text-decoration: none !important;
+}
+.header {
+    width: 393px;
+    height: 98px;
+    background-color: #ffffff;
+    margin-top: 67px;
+}
+.header h5 {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+.header button {
+    width: 164px;
+    height: 44px;
+    border-radius: 24px;
+    border: 2px solid #f8f6f7;
+
+
+    /* background-color: #D9D9D9; */
+    background-color: #f8f6f7;
+}
+.money {
+    width: 338px;
+    height: 126px;
+    background-color: #ffffff;
+    border-radius: 21px;
+    margin-block-start: 30px;
+    margin-inline-start: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+.card {
+    width: 338px;
+    height: 150px;
+    background-color: #0f1048;
+    border-radius: 21px;
+    margin-block-start: 40px;
+    margin-inline-start: 35px;
+    
+}
+.savings-h {
+    color: #ffffff;
+    margin-block-start: 15px;
+}
+.text {
+font-size: 18px;
+font-weight: bold;
+background: linear-gradient(83deg,#E37B7E  61%,  #6B185E 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+fill: transparent;
+display: inline;
+}
+sup {
+    color: #f8f6f7;
+    margin-left: 2px;
+}
+.header section {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    margin-inline-start: 19px;
+    margin-block-start: 13px;
+    
+    
+}
+.quick-action {
+    width: 338px;
+    height: 150px;
+    margin-block-start: 25px;
+    margin-inline-start: 30px;
+    
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+label {
+    font-size: 11px !important;
+    font-weight: 300;
+    text-align: center;
+
+}
+.currency-select{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    padding: 0 10px;
+    margin: 10px 25px;
+}
+.country-select:hover,
+.country-select:focus,
+.country-select:active{
+    border: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Max width */
+    text-align: center;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+@media (max-width: 360px) {
+    * {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 600;
+    }
+    body {
+        background-color: #f7f4f4;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    .header {
+        width: 400px;
+        height: 98px;
+        background-color: #ffffff;
+        margin-top: 67px;
+    }
+    .header h5 {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .header button {
+        width: 164px;
+        height: 44px;
+        border-radius: 24px;
+        border: 2px solid #f8f6f7;
+
+
+        /* background-color: #D9D9D9; */
+        background-color: #f8f6f7;
+    }
+    .money {
+        width: 338px;
+        height: 126px;
+        background-color: #ffffff;
+        border-radius: 21px;
+        margin-block-start: 30px;
+        margin-inline-start: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+    }
+    .card {
+        width: 338px;
+        height: 150px;
+        background-color: #0f1048;
+        border-radius: 21px;
+        margin-block-start: 40px;
+        margin-inline-start: 45px;
+        
+    }
+    .savings-h {
+        color: #ffffff;
+        margin-block-start: 15px;
+    }
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(83deg,#E37B7E  61%,  #6B185E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    fill: transparent;
+    display: inline;
+}
+    sup {
+        color: #f8f6f7;
+        margin-left: 2px;
+    }
+    .header section {
+        display: flex;
+        flex-direction: row;
+        gap: 27px;
+        margin-inline-start: 19px;
+        margin-block-start: 13px;
+        
+        
+    }
+    .quick-action {
+        width: 338px;
+        height: 150px;
+        margin-block-start: 25px;
+        margin-inline-start: 45px;
+        
+    }
+    .label {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    label {
+        font-size: 11px !important;
+        font-weight: 300;
+        text-align: center;
+
+    }
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Max width */
+    text-align: center;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-right: -10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    
+}
